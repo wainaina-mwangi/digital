@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #00ffd5;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #000000;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.clock {
+    font-size: 5rem;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.wrapper .display {
+    position: absolute;
+    background: linear-gradient(155deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.459), #ff0015),url(../assets/landing\ 2.webp);
+    animation: animate 5.5s linear infinite;
+    border-radius: 10px;
+    padding: 7px 7px 7px 7px;
+}
+
+@keyframes animate {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.text1 {
+    text-decoration-color: #000000;
+    font-family: Georgia, Times, serif;
+    display: flex;
+    font-weight: semibold;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+}
